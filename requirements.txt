@@ -1,0 +1,13 @@
+gradio
+onnxruntime
+torch
+torchvision
+transformers
+open_clip_torch
+numpy
+scipy
+scikit-image
+Pillow
+redis
+plotly
+python-dotenv
