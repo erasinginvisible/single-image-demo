@@ -11,3 +11,5 @@ Pillow
 redis
 plotly
 python-dotenv
+email_validator
+cloudinary
