@@ -94,7 +94,7 @@ def get_submissions_from_redis():
     for s in submissions:
         s["quality"] = s["quality"]
         s["performance"] = s["performance"]
-        s["score"] = np.sqrt(float(s["quality"]) ** 2 + float(s["performance"]) ** 2)
+        s["score"] = np.sqrt(float(QUALITY_POST_FUNC(s["quality"])) ** 2 + float(PERFORMANCE_POST_FUNC(s["performance"])) ** 2)
     return filter_submissions(submissions)
 
 
