@@ -305,8 +305,8 @@ def process_submission(name, email, description, is_published, image):
         leaderboard_table,
         f"{rank} out of {len(submissions)}",
         name,
-        f"{performance:.3f}",
-        f"{quality:.3f}",
+        f"{PERFORMANCE_POST_FUNC(performance):.3f}",
+        f"{QUALITY_POST_FUNC(quality):.3f}",
         f"{np.sqrt(quality**2 + performance**2):.3f}",
     )
 
