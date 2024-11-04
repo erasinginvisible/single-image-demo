@@ -292,7 +292,7 @@ def process_submission(name, email, description, is_published, image):
         for s in submissions+[current_submission]
     ]
     rank = (
-        sorted(distances, reverse=True).index(
+        sorted(distances, reverse=False).index(
             np.sqrt(float(QUALITY_POST_FUNC(quality))**2 + float(PERFORMANCE_POST_FUNC(performance))**2)
         ) + 1
     )
